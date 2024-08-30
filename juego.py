@@ -10,7 +10,7 @@ while True:
     
     eleccion = str(input("elige una de las opciones: "))   
     
-    if not eleccion != "P" or not eleccion != "Pa" or not eleccion != "T":
+    if eleccion not in ["P", "Pa", "T"]:
         print("Elige solo las opciones mostradas por pantalla")
         continue
     else:
