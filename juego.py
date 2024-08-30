@@ -16,10 +16,8 @@ while True:
         
         print("\nElige solo las opciones mostradas por pantalla\n")
         continue
-
-    else:
         
-        break
+    break
 
 print(f"PC saco: {contrario}")
 
@@ -49,4 +47,5 @@ elif eleccion == "Pa" and contrario == "Papel":
     
 elif eleccion == "T" and contrario == "Papel":
     print("Perdiste")
-    
+#se que hay muchos if elif en mi codigo pero no sabia como hacer de otra manera 
+#cuando sepa mas del tepa lo perfecionare
