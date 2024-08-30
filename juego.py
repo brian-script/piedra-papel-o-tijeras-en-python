@@ -1,5 +1,7 @@
 import random
 
+
+print("***PIEDRAS PAPEL O TIJERAS***")
 Lista = ["Piedra", "Papel", "Tijeras"]
 
 contrario = random.choice(Lista)
@@ -8,12 +10,15 @@ print("[P]iedras, [Pa]pel, [Tijeras]: ")
 
 while True:
     
-    eleccion = str(input("elige una de las opciones: "))   
+    eleccion = input("elige una de las opciones: ")
     
     if eleccion not in ["P", "Pa", "T"]:
-        print("Elige solo las opciones mostradas por pantalla")
+        
+        print("\nElige solo las opciones mostradas por pantalla\n")
         continue
+
     else:
+        
         break
 
 if eleccion == "P" and contrario == "Tijeras":
@@ -42,7 +47,4 @@ elif eleccion == "Pa" and contrario == "Papel":
     
 elif eleccion == "T" and contrario == "Papel":
     print("Perdiste")
-    
-else:
-    print("hola")
     
