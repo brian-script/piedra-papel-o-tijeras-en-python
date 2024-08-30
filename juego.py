@@ -6,7 +6,7 @@ Lista = ["Piedra", "Papel", "Tijeras"]
 
 contrario = random.choice(Lista)
 
-print("[P]iedras, [Pa]pel, [Tijeras]: ")
+print("[P]iedras, [Pa]pel, [T]ijeras: ")
 
 while True:
     
@@ -20,6 +20,8 @@ while True:
     else:
         
         break
+
+print(f"PC saco: {contrario}")
 
 if eleccion == "P" and contrario == "Tijeras":
     print("Ganaste")
